@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.d-flex {
+    display: flex;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.bolder{
+    font-weight: bold;
+}
+  
+#pokedex {
+    background-image: url("./pokedex.jpg");
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 450px;
+    display: flex;
+}
+  
+#pokemon-infos {
+    background-color: rgba(40, 40, 43, 0.281);
+    width: 252px;
+    height: 255px;
+    position: relative;
+    top: 113px;
+    left: 21px;
+}
+  
+#pokemon-infos h3 {
+    margin: 2px 0px;
+    color: black;
+    text-align: center;
+}
+  
+#pokemon-infos p {
+    margin: 0px;
+    vertical-align: middle;
+    display: flex;
+}
+
+#pokemon-infos div.typeImages img {
+    width: 16px;
+    height: 16px;
+    margin: 0px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+#pokemon-infos .typeImages{ 
+    width: 50px;
+}
+
+#pokemon-infos .infosTypeLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 1px;
+    padding-bottom: 0px;
+}
+
+#pokemon-infos table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+
+#pokemon-infos table, #pokemon-infos tr, #pokemon-infos td {
+    border: 2px solid black;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+#pokemon-infos .sub-table, #pokemon-infos .sub-table tr, #pokemon-infos .sub-table td {
+    width: 100%;
+    border-left: 0px;
+    border-right: 0px;
+}  
+
+#pokemon-infos table.sub-table {
+    border: 0px;
+}
+
+#pokemon-infos .sub-table tr td:last-child, #pokemon-infos .sub-table tr:last-child {
+    border-bottom: 0px;
+}
+
+#pokemon-infos .sub-table tr td:first-child, #pokemon-infos .sub-table tr:first-child {
+    border-top: 0px;
+}
+
+#text-writter {
+    margin: 10px !important;
+    display: block !important;
+}
+
+#pokemon-list {
+    background-color: rgb(182, 243, 102);
+    border-radius: 6px;
+    width: 215px;
+    padding: 0px 5px;
+    height: 282px;
+    position: relative;
+    top: 118px;
+    left: 96px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+
+  
