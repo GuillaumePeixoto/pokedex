@@ -9,7 +9,45 @@
   </head>
   <body>
     <div id="pokedex">
-      <div id="pokemon-infos"></div>
+      <div id="pokemon-infos">
+        <table style='height: 100%' >
+          <tr>
+            <td class='image-cell'>
+              <img id="ImagePokemon" style='width: 110px; height: 110px;' src=''>
+            </td>
+            <td class='text-cell'>
+              <table class='sub-table'>
+                <tr>
+                  <td>
+                    <h3 id="numNomPokemon"></h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class='infosTypeLogo '>
+                      <span class='bolder'>Type : </span> 
+                      <div class='typeImages' id="typePokemon"></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class='infosTypeLogo'>
+                      <span class='bolder'>Faible : </span> 
+                      <div class='typeImages' id="faiblessePokemon"></div>
+                    </div> 
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td colspan='2' style='height: 100%'>
+              <p id='text-writter'></p>
+            </td>
+          </tr>
+        </table>
+      </div>
       <div id="pokemon-list"></div>
     </div>
   </body>

@@ -288,12 +288,10 @@ Object.values(pokemons).forEach((pokemon) => {
   
 function selectPokemon(key) {
     let pokemonSelected = pokemons[key];
-    let content = "<table style='height: 100%' ><tr><td class='image-cell'><img style='width: 110px; height: 110px;' src='" + pokemonSelected["image"] +"'></td><td class='text-cell'><table class='sub-table'><tr><td><h3>"+pokemonSelected["nom"]+"</h3></td></tr><tr><td><div class='infosTypeLogo '><span class='bolder'>Type : </span> <div class='typeImages'>" +
-      getElementLogo(pokemonSelected.type) +
-      "</div></div></td></tr><tr><td><div class='infosTypeLogo'><span class='bolder'>Faible : </span> <div class='typeImages'>" +
-      getElementLogo(pokemonSelected.faiblesse) +
-      "</div></div> </div></td></tr></table></td></tr><tr><td colspan='2' style='height: 100%'><p id='text-writter'></p></td></tr></table>"
-    document.getElementById("pokemon-infos").innerHTML = content;
+    document.getElementById('ImagePokemon').src = pokemonSelected.image;
+    document.getElementById('numNomPokemon').textContent = pokemonSelected.nom;
+    document.getElementById('typePokemon').innerHTML = getElementLogo(pokemonSelected.type);
+    document.getElementById('faiblessePokemon').innerHTML = getElementLogo(pokemonSelected.faiblesse);
     afficherCaractere(pokemonSelected['description'], "text-writter");
 }
   
@@ -310,6 +308,7 @@ function getElementLogo(arrayType) {
 
 function afficherCaractere(texte, elementId) {
     const element = document.getElementById(elementId);
+    element.textContent = "";
     let index = 0;
 
     element.textContent = ''; // Réinitialiser le contenu
@@ -324,3 +323,5 @@ function afficherCaractere(texte, elementId) {
 
     boucle(); // Lancer la boucle
 }
+
+selectPokemon(1); // Afficher le premier Pokémon par défaut
